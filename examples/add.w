@@ -1,0 +1,17 @@
+BEGIN
+
+DECLARATIONS:
+    INT A, B, VALUE;
+    STR NAME;
+
+FUNCTION ADD: INT A, INT B, INT VALUE:
+    VALUE LET A + B; /: LET serve para receber valores :/
+    RETURN VALUE;
+
+FUNCTION MAIN:
+    INPUT NAME;
+    OUTPUT "HELLO" + NAME;
+    INPUT A;
+    INPUT B;
+    OUTPUT ADD: A,B;
+END
